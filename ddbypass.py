@@ -1,9 +1,13 @@
 # HTTP-BYPASS
-import urllib2
 import sys
 import re
-from ctypes import cast, POINTER
-from comtypes import CLSCTX_ALL
+import cfscrape
+import os
+import random
+import time
+import requests
+import threading
+from colorama import Fore
 #Colour
 yellow='\033[93m'
 gren='\033[92m'
@@ -12,13 +16,6 @@ pink='\033[95m'
 red='\033[91m'
 b='\033[1m'
 ##############
-import cfscrape
-import os
-import random
-import time
-import requests
-import threading
-from colorama import Fore
 os.system("clear")
 print("""\033[93m
        __      ANONYMOUS       _____
