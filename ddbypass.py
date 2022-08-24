@@ -6,6 +6,14 @@ import random
 import re
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
+#Colour
+yellow='\033[93m'
+gren='\033[92m'
+cyan='\033[96m'
+pink='\033[95m'
+red='\033[91m'
+b='\033[1m'
+##############
 
 #global params
 url=''
@@ -117,7 +125,7 @@ class MonitorThread(threading.Thread):
 		previous=request_counter
 		while flag==0:
 			if (previous+100<request_counter) & (previous<>request_counter):
-				print "%d Requests Sent" % (request_counter)
+				print("%d Requests Sent" % (request_counter))
 				previous=request_counter
 		if flag==2:
 			print("\n-- bypass --")
