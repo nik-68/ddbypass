@@ -61,10 +61,8 @@ def buildblock(size):
 	return(out_str)
 
 def usage():
-	print '---------------------------------------------------'
-	print 'usage: python2 bypass.py url,time'
-	print 'BYPASS-TOOL-BY-KW1ZY'
-	print '502 bad gateway'
+	print('-------------------------------------')
+	print('502 bad gateway')
 
 	
 #http request
@@ -120,7 +118,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- bypass --"
+			print("\n-- bypass --")
 
 #execute 
 if len(sys.argv) < 2:
@@ -131,7 +129,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "-- bypass send 502 --"
+		print("-- bypass send 502 --")
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
