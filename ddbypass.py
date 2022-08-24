@@ -85,13 +85,13 @@ def httpcall(url):
 	request.add_header('Connection', 'keep-alive')
 	request.add_header('Host',host)
 	try:
-			urllib2.urlopen(request)
-       except urllib2.HTTPError, e:
+		        urllib2.urlopen(request)
+			except urllib2.HTTPError, e:
 			#print e.code
 			set_flag(1)
 			print('bypasss request sent')
 			code=503
-       except urllib2.URLError, e:
+		        except urllib2.URLError, e:
 			#print e.reason
 			sys.exit()
 	else:
