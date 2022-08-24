@@ -4,6 +4,8 @@ import sys
 import threading
 import random
 import re
+from ctypes import cast, POINTER
+from comtypes import CLSCTX_ALL
 
 #global params
 url=''
