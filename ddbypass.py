@@ -116,9 +116,9 @@ print("""\033[93m
 """)
 time.sleep(3)
 
-ip = input(Fore.CYAN+"  URL: "+Fore.WHITE)
+ip = input(Fore.CYAN+"[+]  URL: => "+Fore.WHITE)
 
-count = input(Fore.CYAN+"  Multiplier(1-50): "+Fore.WHITE)
+count = input(Fore.CYAN+"[+]  Multiplier(1-50): => "+Fore.WHITE)
 
 def attack():
   print("  Starting Thread!")
